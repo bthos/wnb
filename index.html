@@ -28,12 +28,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--
-    * LoveHub - Multipurpose Non-Profit Theme
-    * https://wrapbootstrap.com/theme/lovehub-WB0T1J69J
-    * Copyright 1994-2015 ForBetterWeb.com
-    * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
-    -->
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -47,6 +41,10 @@
                     <h1 class="brand-heading">W<span class="color">AI</span>NE <i class="fa fa-star-o"></i></h1>
                     <h2>Coming Soon</h2>
                     <p class="intro-text">We are Coming. Stay tuned!</p>
+
+                    <p>To join the Waiting List, submit your RSVP below.</p>
+                    <p><a data-target="#waitListModal" class="btn btn-primary btn-lg" data-toggle="modal">Waiting List</a></p>
+                    
                     <!-- countdown -->
                     <div id="clock"></div>
                 </div>
@@ -66,6 +64,50 @@
             </div>
         </div>
 </header>
+
+<div class="work">
+    <div class="project-modal modal fade" id="waitListModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <h2>Add to Waiting List</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <script src="https://yastatic.net/q/forms-frontend-ext/_/embed.js"></script><iframe id="my-iframe" src="https://forms.yandex.ru/u/5e3492438843f604885d01b3/?iframe=1" frameborder="0" name="ya-form-5e3492438843f604885d01b3" width="650"></iframe>
+                        <script
+                            (function() {
+                                $('#my-iframe').on('load', function() {
+                                    $('#my-iframe').
+                                    contents().find("head").append(
+                                    $("<style type='text/css'>"+
+                                    ".footer.footer_view_iframe.clearfix {"+
+                                        "display: none;"+
+                                    "} "+
+                                    "</style>")
+                                );
+                                
+                                });
+                            })();
+                        </script>
+                        <style type="text/css" media="screen"> </style>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Date: <strong>October 2020</strong><br>
+                            Donation: <strong>$0,0 / $0,0</strong>
+                        </p>
+                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
